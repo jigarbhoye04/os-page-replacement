@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Page Replacement Algorithms</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+
+   <body>
+    <!-- <h1 class="main-heading">Page Replacement Algorithms</h1> -->
+      <div class="main">
+         <div class="left">
+            <div class="head">
+               <p class="headings">Page Replacement Algorithms</p>
+            </div>
+            <div class="inputsection">
+               <div class="frmdiv dd">
+                  <label for="noofframes" id="high">Number of Frames: </label>
+                  <input
+                     type="text"
+                     value="3"
+                     class="noofframes"
+                     class="base"
+                  />
+               </div>
+               <div class="algodiv dd">
+                  <label for="pagereplacementalgo" id="high">
+                     Page Replacement Algorithm:
+                  </label>
+                  <select
+                     name="pagereplacementalgo"
+                     id="pra"
+                     class="algo-select"
+                  >
+                     <option value="FIFO" class="base">
+                        First In First Out(FIFO)
+                     </option>
+                     <option value="LRU" class="base">
+                        Least Recently Used(LRU)
+                     </option>
+                     <option value="OPTIMAL" class="base">
+                        Optimal Page Replacement
+                     </option>
+                     <!-- <option value="SecondChance" class="base">
+                        Second Chance
+                     </option> -->
+                  </select>
+               </div>
+               <!-- <div class="info-algos" id="algorithm-info"></div>  -->
+               <div class="summarydiv">
+                  <label for="Summary" id="high">Generate Summary: </label>
+                  <input type="checkbox" name="Summary" id="Summary" checked />
+               </div>
+               <div class="refdiv dd">
+                  <label for="references" id="high">References: </label>
+                  <input
+                     type="text"
+                     id="references"
+                     value="7 0 1 2 0 3 0 4 2 3 0 3 2"
+                     class="base"
+                  />
+               </div>
+               <div class="btndiv">
+                  <button onclick="pushData(); navigateToWebsite();">Submit</button>
+               </div>
+            </div>
+         </div>
+         <div class="right">
+            <div class="output">
+               <p class="output-heading">Output</p>
+            </div>
+            <div class="solution">
+               <div class="part1"></div>
+               <div class="part2">
+                  <h2>Output will be generated here</h2>
+                  <br />
+                  <h2>Fill the input form and click the submit button</h2>
+               </div>
+               <div class="part3"></div>
+            </div>
+         </div>
+      </div>
+      <script src="./script.js"></script>
+   </body>
+</html>
